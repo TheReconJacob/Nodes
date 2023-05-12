@@ -8,7 +8,8 @@ Player::Player(int level, int kills) {
 	rightChild = 0;
 }
 void Player::Display() {
-	std::cout << "Level : " << this->level << " Kills : " << this->kills << std::endl;
+	int score = Factorial(level) * kills;
+	std::cout << "Level : " << this->level << " Kills : " << this->kills << " Score: " << score << std::endl;
 }
 
 int Player::Factorial(int n) {

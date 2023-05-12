@@ -2,16 +2,16 @@
 //
 
 #include <iostream>
-#include "Tree.h"
+#include "PlayerTree.h"
 
 int main() {
-    Tree myTree;
-    myTree.Insert(5);
-    myTree.Insert(44);
-    myTree.Insert(12);
-    myTree.Insert(1);
-    myTree.Insert(27);
-    myTree.Insert(99);
+    PlayerTree myTree;
+    myTree.Insert(new Player(1,5));
+    myTree.Insert(new Player(2,44));
+    myTree.Insert(new Player(3,12));
+    myTree.Insert(new Player(4,1));
+    myTree.Insert(new Player(5,27));
+    myTree.Insert(new Player(6,99));
 
     myTree.DisplayInOrder(myTree.root);
 
