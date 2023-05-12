@@ -6,4 +6,5 @@ public:
 	Tree();
 	Node* Find(int key);
 	void DisplayInOrder(Node* localRoot);
+	void Insert(int data);
 };
