@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
+#include "Tree.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    Tree myTree;
+    myTree.Insert(5);
+    myTree.Insert(44);
+    myTree.Insert(12);
+    myTree.Insert(1);
+    myTree.Insert(27);
+    myTree.Insert(99);
+
+    myTree.DisplayInOrder(myTree.root);
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
