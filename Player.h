@@ -7,4 +7,6 @@ public:
 	int level;
 	Player(int level, int kills);
 	void Display();
+	int Factorial(int n);
+	bool LessThan(Player* p1, Player* p2);
 };
